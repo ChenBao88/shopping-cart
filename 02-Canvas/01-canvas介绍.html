@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="600" height="400" id="canvas"></canvas>
+</body>
+</html>
+
+<script>
+    //1. 先拿到画布
+    var canvas = document.querySelector("#canvas");
+
+    //2. 创建一个画图工具
+    var context = canvas.getContext("2d"); 
+
+    //3. 画图(先把图形画到一个玻璃纸上， 再把玻璃纸上的图片往画布上印一次，才能看到)
+    //落笔
+    context.moveTo(100, 100);
+    //画线
+    context.lineTo(300, 300);
+
+    //4. 印刷
+    context.stroke();
+</script>

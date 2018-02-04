@@ -1,0 +1,16 @@
+.section1{background:url(../images/01/bg.png) no-repeat center bottom}
+.section1 .products{position:absolute;left:50%;margin-left:-412px;bottom:260px}
+.section1 .sofa{position:absolute;left:50%;margin-left:-200px;bottom:330px}
+.section1 .ball{position:absolute;right:50px;top:50px}
+.section1.animate .sofa{-webkit-animation:sofa 1s infinite;animation:sofa 1s infinite}
+.section1.animate .ball{-webkit-animation:ball 3s infinite;animation:ball 3s infinite}
+@-webkit-keyframes ball{50%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}}
+@keyframes ball{50%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}}
+@-webkit-keyframes sofa{50%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}}
+@keyframes sofa{50%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}}
+.section2{background:url(../images/02/bg.png) center bottom no-repeat}
+.section2 .words02{position:absolute;left:50%;margin-left:-181px;bottom:540px}
+.section2 .sofas{position:absolute;right:50%;margin-right:-220px;bottom:210px;height:0;opacity:0}
+.section2 .search01{position:absolute;left:50%;margin-left:400px;bottom:300px}
+.section2 .search02{position:absolute;left:50%;margin-left:-111px;bottom:300px;display:none}
+.section2 .test{position:absolute;left:50%;margin-left:120px;bottom:449px;height:30px}

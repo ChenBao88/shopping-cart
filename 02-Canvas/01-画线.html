@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<canvas width='600' height='400' id='canvas'></canvas>
+<script>
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    //1. 落笔
+    context.moveTo(100, 100);
+    context.lineTo(300, 100);
+    // 图形是画在玻璃纸上， 如果要显示，需要做一次印刷
+
+    //描边
+    context.stroke();
+
+    //画第二条线
+    //开启一张新的玻璃纸
+    context.beginPath();
+    context.moveTo(100, 300);
+    context.lineTo(300, 300);
+    context.stroke();
+
+    //路径： 就是玻璃纸上的线条， 和由线条组成的形状
+</script>
+</body>
+</html>
